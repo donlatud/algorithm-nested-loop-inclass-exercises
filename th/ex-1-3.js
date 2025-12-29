@@ -7,6 +7,16 @@
 */
 
 // Start coding here
+function generatePattern(size) {
+    let star = ''
+    for (let i = 0; i < size; i++) {
+        for (let j = 0; j < size - i; j++) {
+            star += '*';
+        }
+        star += '\n';
+    }
+    return star;
+}
 
 console.log(generatePattern(3)); 
 
